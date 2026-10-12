@@ -1,0 +1,12 @@
+{
+  "customer_id": "cust_001",
+  "thread_id": "thread_0004",
+  "channel": "voice_note",
+  "started_at": "2026-10-06T17:40:00+01:00",
+  "turns": [
+    {
+      "speaker": "customer",
+      "text": "Hi Ansel, it's Marisol. Two quick things for the installation. First, the side gate is too narrow for the battery, so the crew will need to bring it through the garage. I'll leave the garage door open for them. Second, my rota has changed, so could we move the installation from Thursday 15 October to Friday 16 October, same time? Thanks."
+    }
+  ]
+}

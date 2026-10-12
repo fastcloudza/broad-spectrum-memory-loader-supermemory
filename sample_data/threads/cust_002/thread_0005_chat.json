@@ -1,0 +1,14 @@
+{
+  "customer_id": "cust_002",
+  "thread_id": "thread_0005",
+  "channel": "chat",
+  "started_at": "2026-09-29T10:15:00+01:00",
+  "turns": [
+    {"speaker": "customer", "text": "Hello, I'm Dov Castellane. I run a pottery studio called Kiln and Clover in Quillhaven. Could solar help with my electricity bill?"},
+    {"speaker": "agent", "text": "Hi Dov, this is Ansel at Fernhollow Solar. Very likely. What uses the most power in the studio?"},
+    {"speaker": "customer", "channel": "voice_note", "text": "Easier to say than type. It's the kiln by a long way. It's electric, and I fire it twice a week, on Tuesdays and Saturdays. A firing runs for about ten hours and I start it at seven in the morning. Everything else is just lights and a couple of wheels."},
+    {"speaker": "agent", "text": "Thanks, that's clear. Daytime firings suit solar well. Could one of our surveyors visit the studio next week?"},
+    {"speaker": "customer", "text": "Yes. Any day except Tuesday, I can't leave the kiln."},
+    {"speaker": "agent", "text": "Then Wednesday 7 October at 10 am. Our surveyor Ottoline will meet you there."}
+  ]
+}

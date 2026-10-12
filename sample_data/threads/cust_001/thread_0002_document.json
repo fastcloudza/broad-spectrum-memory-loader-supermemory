@@ -1,0 +1,12 @@
+{
+  "customer_id": "cust_001",
+  "thread_id": "thread_0002",
+  "channel": "document",
+  "started_at": "2026-09-17T15:30:00+01:00",
+  "turns": [
+    {
+      "speaker": "customer",
+      "text": "Annual electricity statement issued by Quillhaven Power Co-operative, the electricity supplier, to its member M. Venn (Marisol Venn), who shared it with Fernhollow Solar.\nMember: M. Venn.\nStatement period: 1 September 2025 to 31 August 2026.\nTariff: Night Owl two-rate.\nNight rate applies from 00:30 to 05:30 every day. Day rate applies at all other times.\nNight rate: 9 pence per kilowatt-hour. Day rate: 31 pence per kilowatt-hour.\nTotal consumption for the period: 3,150 kilowatt-hours.\nOf which night rate: 410 kilowatt-hours.\nOf which day rate: 2,740 kilowatt-hours.\nSupply type: single phase.\nMain fuse rating: 80 amps.\nExport meter fitted: no."
+    }
+  ]
+}

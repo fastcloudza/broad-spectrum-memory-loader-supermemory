@@ -1,0 +1,16 @@
+{
+  "customer_id": "cust_002",
+  "thread_id": "thread_0006",
+  "channel": "meeting",
+  "started_at": "2026-10-07T10:00:00+01:00",
+  "turns": [
+    {"speaker": "agent", "text": "Thanks for showing me round, Dov. I've had a look at the roof and the supply. The roof is a shallow metal one with plenty of room, so panels are no trouble."},
+    {"speaker": "customer", "text": "Good. And the supply?"},
+    {"speaker": "agent", "text": "You have a three-phase supply, which is what the kiln needs, so we'd fit a three-phase inverter. I'd suggest a 9 kilowatt array."},
+    {"speaker": "customer", "text": "Would I need a battery as well?"},
+    {"speaker": "agent", "text": "I wouldn't start with one. You use most of your power in daylight, so the panels can feed the kiln directly. A battery can be added later."},
+    {"speaker": "customer", "text": "That suits me. My landlord owns the building, though, so I'll need her permission before anything goes on the roof."},
+    {"speaker": "agent", "text": "Understood. I'll send a one-page summary you can pass to her, and we'll hold the quote until you hear back."},
+    {"speaker": "customer", "text": "Thank you. I should have an answer from her by the end of the month."}
+  ]
+}

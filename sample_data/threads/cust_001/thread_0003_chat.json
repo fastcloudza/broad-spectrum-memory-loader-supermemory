@@ -1,0 +1,40 @@
+{
+  "customer_id": "cust_001",
+  "thread_id": "thread_0003",
+  "channel": "chat",
+  "started_at": "2026-09-22T16:05:00+01:00",
+  "turns": [
+    {
+      "speaker": "customer",
+      "text": "Hi Ansel, I got the quote, thank you. Will that battery still be big enough once the car arrives?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question. On its own, probably not. I'd move you up to the 10 kWh battery. It costs £1,900 more, but it should cover your evenings and leave room for the car."
+    },
+    {
+      "speaker": "customer",
+      "text": "OK, let's go with the bigger one."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done, I've updated the quote: 4 kW array and a 10 kWh battery. Shall I book the installation?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes please. Can the crew come at the usual time for me?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. I've booked Thursday 15 October, and the crew will arrive at 1:30 pm, not their normal 8 am start."
+    },
+    {
+      "speaker": "customer",
+      "text": "Perfect. I'll take Biscuit to my neighbour's for the day."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. We'll message you the day before as a reminder."
+    }
+  ]
+}

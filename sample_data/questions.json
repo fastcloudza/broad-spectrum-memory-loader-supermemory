@@ -1,0 +1,12 @@
+{
+  "cust_001": [
+    "When is the cheapest time for this customer to charge her car?",
+    "What time of day should the installation crew arrive, and why?",
+    "Why is the battery bigger than the one first quoted?",
+    "How should the crew bring the battery to the house, and on which day?"
+  ],
+  "cust_002": [
+    "On which days is the kiln running?",
+    "What has to happen before the installation can go ahead?"
+  ]
+}

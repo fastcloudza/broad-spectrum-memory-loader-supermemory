@@ -1,0 +1,64 @@
+{
+  "customer_id": "cust_001",
+  "thread_id": "thread_0001",
+  "channel": "phone_call",
+  "started_at": "2026-09-14T14:10:00+01:00",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Fernhollow Solar, this is Ansel. How can I help?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Hi, my name is Marisol Venn. I'd like a quote for solar panels and a battery for my house in Quillhaven."
+    },
+    {
+      "speaker": "agent",
+      "text": "Happy to help, Marisol. Can you tell me a bit about the roof?"
+    },
+    {
+      "speaker": "customer",
+      "text": "It's the back roof, the one over the garden. Slate tiles, and it was redone two years ago, so it's in good shape."
+    },
+    {
+      "speaker": "agent",
+      "text": "That helps. Do you know roughly how much electricity you use in a year?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Not off the top of my head. I can send you my statement from the power co-op later this week."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Is the best number to reach you the one you're calling from?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yes, but please don't ring in the mornings. I'm on the early shift at Dunmere Bakery and I'm not home until about one."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood, afternoons only. Anything else we should plan around?"
+    },
+    {
+      "speaker": "customer",
+      "text": "One thing. My sister is handing down her electric car to me in November, so I suppose I'll be using more power from then on."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know. I'll put together a starting quote for a 4 kilowatt array and a 5 kilowatt-hour battery, and we can adjust once I've seen the statement."
+    },
+    {
+      "speaker": "customer",
+      "text": "Sounds good. Oh, and I have a dog, Biscuit. He's nervous around strangers, so I'd need some warning before anyone visits."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem, we'll always message before a visit. You'll have the quote by Wednesday 16 September."
+    },
+    {
+      "speaker": "customer",
+      "text": "Thank you, Ansel."
+    }
+  ]
+}
