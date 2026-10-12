@@ -7,17 +7,66 @@ learned: the customer's profile, and memories that link facts across channels.
 
 ## Why
 
-A business talks to a customer over calls, chats, voice notes and documents. If each
-one is reduced to the same shape, text attributed to the customer or to the agent,
-they can all go into one memory. The memory can then connect a fact from a call with
-a fact from a chat.
+A memory engine can only remember the conversations it is given, and a lot of what a
+business says to a customer never reaches it as text. It happens on a phone call, in
+a voice note, in a meeting, or in a document the customer sent in.
+
+I work with this every day. I am the founder of [Wappari](https://wappari.com/),
+where every conversation a business has with a customer is brought down to the same
+shape, i.e. text attributed to the customer or to the agent, turn by turn, and kept
+in one record per customer. I call that broad spectrum conversation memory, and I
+wrote it up in a white paper,
+[Broad Spectrum Memory: Why Agents Need to Hear Every Channel, Not Just One](https://wappari.com/whitepapers/broad-spectrum-memory.php).
+
+This repository is simply that idea pointed at Supermemory. It takes a phone call, a
+chat, a voice note and a document for the same customer, sends each one as
+speaker-attributed text into one namespace, and then asks questions that need a fact
+from more than one of them. The sample data is invented, and none of Wappari's code
+is in here.
+
+Arno Hart · [LinkedIn](https://www.linkedin.com/in/arnohart/)
+
+## What Supermemory did with it
+
+Four threads for one customer went in: a phone call, an electricity statement, a
+chat and a voice note. Supermemory wrote 29 memories from them, and a profile. This
+is from a real run on 12 October 2026. The full, unedited output is under
+[Sample output](#sample-output).
+
+![Supermemory's Memory Graph view of the run, with the electricity statement selected](docs/memory-graph.png)
+
+*Supermemory's own Memory Graph view of this run. Each square is a thread and the
+circles around it are the memories it produced. The selected square is the
+electricity statement, which went in as one `[document] customer:` turn and produced
+11 memories.*
+
+**It joined facts across channels.** Asked "Why is the battery bigger than the one
+first quoted?", one of its answers was:
+
+> The customer’s initial quote included a 5 kWh battery, but after learning she would
+> be receiving an electric car in November, the agent upgraded the proposal to a
+> 10 kWh battery. The larger battery was chosen because the customer’s future
+> increased electricity demand would likely exceed the capacity of the smaller unit.
+> The agent explained that the 10 kWh option costs £1,900 more than the 5 kWh
+> alternative and that the quote was updated to a 4 kW solar array plus the larger
+> battery.
+
+The first quote and the car are in the phone call. The upgrade and the price are in
+the chat.
+
+**The further from the source, the less exact.** The memories had the price and the
+date right. The summary written from those memories has "$1,900" for £1,900 and
+"Friday 15 October" for Friday 16 October. So for amounts and dates, use the
+memories or the source passages. The summary is for the general picture.
+
+The combined answers are generated each time, so a new run gives different wording.
 
 ## Quickstart
 
 You need Python 3.10 or later and a Supermemory API key.
 
 ```bash
-git clone <repository-url> broad-spectrum-conversation-memory-loader
+git clone https://github.com/fastcloudza/broad-spectrum-conversation-memory-loader.git
 cd broad-spectrum-conversation-memory-loader
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -e .
@@ -89,24 +138,8 @@ Supermemory's relevance score, from 0 to 1: how close a result is in meaning to 
 question, not how likely it is to be correct. The results at the top with scores
 near 1 are answers Supermemory wrote by combining several memories (see
 [Searches](#searches)). Results marked `source:` are passages of the original
-transcripts, shortened here to one line.
-
-What to look at:
-
-- **Memories from every channel.** The call, the statement, the chat and the voice
-  note each produced memories, and the profile combines them.
-- **Facts joined across channels.** For the battery question, the 0.72 answer takes
-  the first quote and the car from the call and the upgrade and price from the chat.
-  For the delivery question, it takes the garage route and the new day from the
-  voice note and the time from the chat.
-- **What it got wrong.** The 0.90 answer to the battery question is wrong: it cites
-  the fuse rating and the old Thursday date. The last profile entry, a summary
-  Supermemory wrote, says "$1,900" and "Friday 15 October" and adds a preference
-  nobody stated. One memory has the reminder going "to Ansel", who is the agent.
-  The crew-arrival answer gives a reason ("easier if they arrive later in the day")
-  that is not in the conversations.
-
-The combined answers are generated each time, so a new run gives different wording.
+transcripts, shortened here to one line. The last profile entry is a summary
+Supermemory wrote.
 
 <details>
 <summary>Full output</summary>
