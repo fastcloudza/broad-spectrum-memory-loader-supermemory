@@ -1,4 +1,4 @@
-# Broad Spectrum Conversation Memory Loader
+# Broad Spectrum Conversation Memory Loader for Supermemory
 
 Loads one customer's conversations from several channels (a phone call, a chat, a
 voice note, a meeting, a document) into [Supermemory](https://supermemory.ai) as
@@ -66,8 +66,8 @@ The combined answers are generated each time, so a new run gives different wordi
 You need Python 3.10 or later and a Supermemory API key.
 
 ```bash
-git clone https://github.com/fastcloudza/broad-spectrum-conversation-memory-loader.git
-cd broad-spectrum-conversation-memory-loader
+git clone https://github.com/fastcloudza/broad-spectrum-memory-loader-supermemory.git
+cd broad-spectrum-memory-loader-supermemory
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -e .
 
